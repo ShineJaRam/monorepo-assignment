@@ -1,10 +1,44 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "clean": "lerna clean",
+    "version": "lerna version --no-push",
+    "release": "lerna publish"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{ts,tsx,html,scss}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "@commitlint/cli": "^13.2.0",
+    "@commitlint/config-conventional": "^13.2.0",
+    "@commitlint/config-lerna-scopes": "^13.2.0",
+    "@types/lodash": "^4.14.175",
+    "@types/node": "^16.10.2",
+    "babel-loader": "^8.2.2",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-typescript": "^14.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.0",
+    "lerna": "^4.0.0",
+    "lint-staged": "^11.2.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.3"
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "prepare": "husky install"
+  }
 }

@@ -1,0 +1,35 @@
+{
+  "extends": [
+    "react-app",
+    "airbnb-typescript",
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "react-hooks/exhaustive-deps": 0,
+    "react/prop-types": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-wrap-multilines": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-fragments": 0,
+    "react/require-default-props": 0,
+    "react/no-unused-prop-types": 0,
+    "jsx-a11y/media-has-caption": 0,
+    "@typescript-eslint/no-shadow": "off",
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/comma-dangle": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "import/no-extraneous-dependencies": 0,
+    "import/prefer-default-export": 0,
+    "import/no-cycle": "off",
+    "no-console": "warn",
+    "default-case": "off",
+    "consistent-return": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-vars": "off"
+  }
+}
