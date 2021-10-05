@@ -1,8 +1,62 @@
 {
   "version": "0.0.0",
+  "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true,
   "packages": [
     "packages/*"
-  ]
+  ],
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "registry": "https://npm.pkg.github.com",
+      "message": "chore: publish"
+    },
+    "version": {
+      "allowBranch": [
+        "master"
+      ],
+      "conventionalCommits": true,
+      "changelogPreset": {
+        "name": "conventional-changelog-conventionalcommits",
+        "types": [
+          {
+            "type": "feat",
+            "section": ":rocket: New Features",
+            "hidden": false
+          },
+          {
+            "type": "fix",
+            "section": ":bug: Bug Fix",
+            "hidden": false
+          },
+          {
+            "type": "docs",
+            "section": ":memo: Documentation",
+            "hidden": false
+          },
+          {
+            "type": "style",
+            "section": ":sparkles: Styling",
+            "hidden": false
+          },
+          {
+            "type": "refactor",
+            "section": ":house: Code Refactoring",
+            "hidden": false
+          },
+          {
+            "type": "build",
+            "section": ":hammer: Build System",
+            "hidden": false
+          },
+          {
+            "type": "chore",
+            "section": ":mega: Other",
+            "hidden": true
+          }
+        ]
+      }
+    }
+  }
 }
