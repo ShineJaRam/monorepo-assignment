@@ -2,6 +2,10 @@
   "name": "root",
   "private": true,
   "scripts": {
+    "install:my-app1": "yarn workspace my-app1 add",
+    "remove:my-app1": "yarn workspace my-app1 remove",
+    "install:my-app2": "yarn workspace my-app2 add",
+    "remove:my-app2": "yarn workspace my-app2 remove",
     "clean": "lerna clean",
     "version": "lerna version --no-push",
     "release": "lerna publish",
