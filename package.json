@@ -4,8 +4,10 @@
   "scripts": {
     "install:my-app1": "yarn workspace my-app1 add",
     "remove:my-app1": "yarn workspace my-app1 remove",
+    "start:my-app1": "yarn workspace my-app1 start",
     "install:my-app2": "yarn workspace my-app2 add",
     "remove:my-app2": "yarn workspace my-app2 remove",
+    "start:my-app2": "yarn workspace my-app2 start",
     "clean": "lerna clean",
     "version": "lerna version --no-push",
     "release": "lerna publish",
@@ -19,7 +21,8 @@
   },
   "commitlint": {
     "extends": [
-      "@commitlint/config-conventional"
+      "@commitlint/config-conventional",
+      "@commitlint/config-lerna-scopes"
     ]
   },
   "lint-staged": {
