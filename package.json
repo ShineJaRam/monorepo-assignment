@@ -1,5 +1,6 @@
 {
   "name": "root",
+  "version": "1.0.2",
   "private": true,
   "scripts": {
     "install:my-app1": "yarn workspace my-app1 add",
@@ -55,6 +56,5 @@
   },
   "workspaces": [
     "packages/*"
-  ],
-  "version": "1.0.1"
+  ]
 }

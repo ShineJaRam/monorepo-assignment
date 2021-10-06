@@ -11,6 +11,8 @@ function App() {
         <br />
         <br />
         my-app1에서의 변경사항을 기록합니다.
+        <br />
+        lerna versioning을 실습 중입니다.
       </header>
     </div>
   );
