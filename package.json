@@ -1,6 +1,6 @@
 {
   "name": "root",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
   "scripts": {
     "install:my-app1": "yarn workspace my-app1 add",
@@ -10,6 +10,7 @@
     "remove:my-app2": "yarn workspace my-app2 remove",
     "start:my-app2": "yarn workspace my-app2 start",
     "clean": "lerna clean",
+    "version": "lerna version --no-push",
     "release": "lerna publish",
     "prepare": "husky install"
   },
